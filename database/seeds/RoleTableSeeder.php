@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 use Illuminate\Database\Seeder;
 
 class RoleTableSeeder extends Seeder
@@ -14,7 +16,7 @@ class RoleTableSeeder extends Seeder
 	 $role_regular_user = new Role;
 	 $role_regular_user->name = 'user';
 	 $role_regular_user->description = 'A regular user';
-         $role_regular_user->save();
+     $role_regular_user->save();
 
 	 $role_admin_user = new Role;
          $role_admin_user->name = 'admin';

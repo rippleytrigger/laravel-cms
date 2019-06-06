@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\RoleTableSeeder;
+use App\UserTableSeeder;
+use App\PostTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,8 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 	    $this->call([
-	       RoleTableSeeder::class,
-	       UserTableSeeder::class,
-            ]);
+           RoleTableSeeder::class,
+           UserTableSeeder::class,
+           PostTableSeeder::class
+        ]);
     }
 }
